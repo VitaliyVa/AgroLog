@@ -3,6 +3,56 @@ $( document ).ready(function() {
 
 
 
+
+    $('.select__input').on('click', function(){
+        let fieldt = $(this).parents('.select').find(".select__wrap");
+        fieldt.toggleClass('select__wrap_active');
+        $('.field__icon', this).toggleClass('field__icon_active');
+    });
+
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(this).parent('.select').find(".select__wrap"); // тут указываем класс элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+	  &&
+	  div.has(e.target).length === 0) { // и не по его дочерним элементам
+  	  $('.select__wrap').removeClass('select__wrap_active');
+  	//   $('.field').removeClass('field-active');
+      }
+      $('.field__icon').removeClass('field__icon_active');
+	});
+
+    $('.select__wrap_item').on('click', function() {
+        let text = $(this).text();
+        let id = $(this).data('id');
+        let field = $(this).parents('.select').find(".field_text ");
+        let input_select = $(this).parents('.select').find("input");
+        $(field).text(text);
+        $(input_select).val(id);
+        $('.select__wrap').removeClass('select__wrap_active');
+        $('.field__icon').removeClass('field__icon_active');
+        // $('.select__input').removeClass('select__input-active');
+        
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $('#lang-btn').on('click', function(){
         $('.lang-nav').toggleClass('lang-nav_active');
         $('.arrow-lang').toggleClass('arrow-lang_active');

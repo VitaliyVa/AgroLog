@@ -3,10 +3,13 @@
 @import 'partners';
 @import 'auto';
 @import 'news';
-
-
-
-
+@import 'footer';
+// sto
+@import 'header__sto';
+// about
+@import 'header__about';
+// contacts
+@import 'header__contacts';
 
 
 
@@ -18,7 +21,7 @@ body {
 	// font-family: 'OpenSans-Regular', sans-serif;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background-color: #4d5359;
+    background-color: #5d6165;
 	
 }
 *,
