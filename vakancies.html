@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="static/css/normalize.css">
 	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="static/css/animate.css">
+	<link rel="stylesheet" href="static/css/screen.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -100,68 +101,141 @@
 								</a>
 							</ul>
 						</nav>
-					
 					</div>
 			</div>
     </div>
-    <header class="header__contacts">
+    <header class="vakancies">
         <div class="container">
-        <div class="contacts-block">
-			<div class="contacts-top">
-				<div class="about__title">
-					Контакти
+			<div class="vakan-top-block">
+				<div class="vakan__title">
+					Вакансія
 				</div>
-				<div class="sto__sub">
-					Наша компанія  заснована в 2011 році. За  період роботи  ми  заслужили довіру компаній,  показали себе надійними партнерами їх бізнесу тому що з повною відповідальністю підходимо до поставлених завдань.
-
-					<p>
-						Ми спеціалізуємось на перевезенні різноманітних вантажів по всій території України та за кордоном. Досвід роботи, кваліфікований персонал та командний дух  дає можливість виконувати завдання із різним рівнем складності з максимальним результатом. 
-					</p>
-
+				<div class="vakan__name-block">
+					<div class="vakan__name">
+						Водій-міжнародник
+					</div>
+					<div class="vakan-contact-block">
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="static/img/sto/users.svg" alt="">
+								<div class="contact-user">
+									Контактна особа
+								</div>
+							</div>
+							<div class="contact-user__sub">
+								Коломієць Марта
+							</div>
+						</div>
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="static/img/index/map-pin.svg" alt="">
+								<div class="contact-user">
+									Адреса
+								</div>
+							</div>
+							<div class="contact-user__sub">
+								м. Тернопіль, вул. Руська 25 А
+							</div>
+						</div>
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="static/img/index/phone.svg" alt="">
+								<div class="contact-user">
+									Телефон
+								</div>
+							</div>
+							<a href="tel:+30981231223" class="contact-user__sub">
+								+3 098 123 12 23
+							</a>
+							
+						</div>
+						
+					</div>
 				</div>
 			</div>
-			<div class="contacts-bottom">
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/map-pin.svg" alt="">
-					</div>
-					<div class="contacts-text">
-						м. Тернопіль, вул. Руська 25 А
-					</div>
-				</div>
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/phone.svg" alt="">
-					</div>
-					<a href="tel:+30981231223" class="contacts-text">+3 098 123 12 23</a>
-				</div>
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/mail.svg" alt="">
-					</div>
-					<a href="mailto:info@agrologistyka.com" class="contacts-text">info@agrologistyka.com</a>
-				</div>
-			</div>
-		</div>
-		<div class="form-wrap">
-              
-			<form action="test.php" class="form-sto">
-				<img src="static/img/sto/screenshot-2019-12-16-at-22-24-21.png" class="form-abs2" alt="">
-				<div class="form-sto__title">
-					Запоніть контактну форму і ми зв’яжемось з вами
-				</div>
-				<div class="input-sto-wrap">
-					<input type="text" class="input-sto" placeholder="Ім'я">
-					<input type="text" class="input-sto" placeholder="Номер телефону">
-					<input type="text" class="input-sto" placeholder="Ваш Емейл">
+			<div class="vakan-bottom-wrap">
+				<div class="vakan-bottom-left">
+					<form class="cmxform vakance" method="get" action="">
 					
-					<input class="form-sto-btn hvr-wobble-horizontal" type="button" name="Відправити" value="Відправити">
-				</div>
+						
+							
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="firstname">Ім’я (ПІП)</label class="label__style">
+									<input id="firstname" name="firstname" placeholder="Андрієнко Андій Андрійович" type="text">
+								</div>
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="email">Email</label>
+									<input id="email" name="email" placeholder="clientmail@mail.com" type="email">
+								</div>
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="number">Номер телефону</label>
+									<input id="number" name="number" placeholder="+3 8 096 123 45 67" type="phone">
+								</div>
+
+								<label class="label__style label__style-last" for="add__file_id">Ваше резюме</label>
+								
+								<div id="add__btn" class="add__file">
+									<div id="add__btn_a_id" class="add__btn_a">
+										<img src="static/img/sto/exit.png" alt="">
+									</div>
+									<span class="file__name fill_old">
+										Прикріпити файл
+									</span>
+									<input type="file" id="add__file_id" name="add__file_id" accept="image/*">
+								</div>
+								
+								
+								
+							
+								
+								
+									<input class="submit_vak" type="submit" value="Надіслати">
+
+
+								
 				
-			</form>
-		</div>
+					</form>
+				</div>
+				<div class="vakan-bottom-right">
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Вид зайнятості
+						</div>
+						<div class="contact-user__sub">
+							Наша компанія  заснована в 2011 році. За  період роботи  ми  заслужили довіру компаній,  показали себе надійними партнерами їх бізнесу тому що з повною відповідальністю підходимо до поставлених завдань.
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Вимоги
+						</div>
+						<div class="contact-user__sub">
+							Наша компанія  заснована в 2011 році. За  період роботи  ми  заслужили довіру компаній,  показали себе надійними партнерами їх бізнесу тому що з повною відповідальністю підходимо до поставлених завдань.
+
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Опис ваканції
+						</div>
+						<div class="contact-user__sub">
+							Наша компанія  заснована в 2011 році. За  період роботи  ми  заслужили довіру компаній,  показали себе надійними партнерами їх бізнесу тому що з повною відповідальністю підходимо до поставлених завдань.
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						
+						<div class="contact-user__sub">
+Ми спеціалізуємось на перевезенні різноманітних вантажів по всій території України та за кордоном. Досвід роботи, кваліфікований персонал та командний дух  дає можливість виконувати завдання із різним рівнем складності з максимальним результатом. 
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
-        <!-- /.container -->
+		<!-- /.container -->
+		
     </header>
     <!-- /.header -->
 
@@ -292,9 +366,15 @@
 
 
 
-    <script type="text/javascript" src="static/js/jQuery.js"></script>
-	<script type="text/javascript" src="static/js/lazy.js"></script>
-  	<script src="static/js/wow.min.js"></script>
-  	<script type="text/javascript" src="static/js/main.js"></script>
+    <script type="text/javascript" src="static/js/jQuery.js" defer></script>
+	<script type="text/javascript" src="static/js/lazy.js" defer></script>
+
+
+
+	<!-- <script src="static/js/additional-methods.min.js"></script> -->
+	<script src="static/js/jquery.validate.min.js" defer></script>
+
+  	<script src="static/js/wow.min.js" defer></script>
+  	<script type="text/javascript" src="static/js/main.js" defer></script>
 </body>
 </html>

@@ -79,12 +79,18 @@
 .info__link {
     font-size: 16px;
   font-weight: 300;
+  cursor: pointer;
   color: #fff;
   margin-top: 20px;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  transition: color .2s;
+
+  &:hover {
+      color: rgb(70, 204, 70);
+  }
 }
 .alert-bl {
     margin-top: 100px;

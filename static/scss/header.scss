@@ -71,10 +71,21 @@
     line-height: normal;
     letter-spacing: normal;
     color: #04b950;
+
+    &:hover {
+        .svg-arrow {
+            transform: translateX(8px);
+        }
+        .svg-arrow_down {
+            transform: translateX(8px) rotate(90deg);
+        }
+    }
 }
 .svg-arrow {
     margin-left: 8px;
+    transition: transform .2s;
 }
+
 @media (max-width: 693px) {
     .svg-bg {
         position: relative;

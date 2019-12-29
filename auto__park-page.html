@@ -5,8 +5,10 @@
 	<title>AgroLog</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="static/css/screen.css">
+	<link rel="stylesheet" href="static/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="static/css/style.css">
-	<link rel="stylesheet" href="static/css/animate.css">
+	
 </head>
 <body>
     <div class="nav-bar">
@@ -100,19 +102,50 @@
 								</a>
 							</ul>
 						</nav>
-					
 					</div>
 			</div>
     </div>
-    <header class="header__contacts">
+    <header class="header__auto__park">
         <div class="container">
-        <div class="contacts-block">
+			<form method="post" action="" class="formA cmxform vakance" id="modal-form" style="display:none;">
+			
+					
+						
+							
+				<div class="inp-vak-wrap">
+					<label class="label__style" for="firstname">Ім’я (ПІП)</label class="label__style">
+					<input id="firstname" name="firstname" placeholder="Андрієнко Андій Андрійович" type="text">
+				</div>
+				<div class="inp-vak-wrap">
+					<label class="label__style" for="email">Email</label>
+					<input id="email" name="email" placeholder="clientmail@mail.com" type="email">
+				</div>
+				<div class="inp-vak-wrap">
+					<label class="label__style" for="number">Номер телефону</label>
+					<input id="number" name="number" placeholder="+3 8 096 123 45 67" type="phone">
+				</div>
+
+				<div class="res-wrap">
+					<div class="res-text">
+						Приблизна вартість:
+					</div>
+					<div id="main-result" class="main-result">
+						
+					</div>
+				</div>
+
+					<input class="submit_vak hvr-wobble-horizontal" type="submit" value="Оформити">
+
+		  </form>
 			<div class="contacts-top">
 				<div class="about__title">
-					Контакти
+					Наші самоскиди
 				</div>
 				<div class="sto__sub">
 					Наша компанія  заснована в 2011 році. За  період роботи  ми  заслужили довіру компаній,  показали себе надійними партнерами їх бізнесу тому що з повною відповідальністю підходимо до поставлених завдань.
+
+				
+					
 
 					<p>
 						Ми спеціалізуємось на перевезенні різноманітних вантажів по всій території України та за кордоном. Досвід роботи, кваліфікований персонал та командний дух  дає можливість виконувати завдання із різним рівнем складності з максимальним результатом. 
@@ -120,48 +153,1050 @@
 
 				</div>
 			</div>
-			<div class="contacts-bottom">
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/map-pin.svg" alt="">
+			<div class="auto-tab-link-block">
+					<div data-tab="tab_1" class="tab__link-auto-prof tab__link-auto-prof_active">
+						Рефрижиратор
+					</div data-tab="tab_">
+					<div data-tab="tab_2" class="tab__link-auto-prof">
+						Самоскид
 					</div>
-					<div class="contacts-text">
-						м. Тернопіль, вул. Руська 25 А
+					<div data-tab="tab_3" class="tab__link-auto-prof">
+						Рідинні бочки
 					</div>
-				</div>
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/phone.svg" alt="">
+					<div data-tab="tab_4" class="tab__link-auto-prof">
+						Цистерни сипучі
 					</div>
-					<a href="tel:+30981231223" class="contacts-text">+3 098 123 12 23</a>
-				</div>
-				<div class="contacts__link hvr-wobble-top">
-					<div class="svg-contacts">
-						<img src="static/img/index/mail.svg" alt="">
+					<div data-tab="tab_5" class="tab__link-auto-prof">
+						Тент
 					</div>
-					<a href="mailto:info@agrologistyka.com" class="contacts-text">info@agrologistyka.com</a>
 				</div>
 			</div>
-		</div>
-		<div class="form-wrap">
-              
-			<form action="test.php" class="form-sto">
-				<img src="static/img/sto/screenshot-2019-12-16-at-22-24-21.png" class="form-abs2" alt="">
-				<div class="form-sto__title">
-					Запоніть контактну форму і ми зв’яжемось з вами
+	
+	</div>	
+		<!-- /.container -->
+		<div class="container">
+			<div class="tab-auto-content-block">
+				<div id="tab_1" class="tab-auto-content-prof tab-auto-content-prof_active">
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+							
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="input-sto-wrap">
-					<input type="text" class="input-sto" placeholder="Ім'я">
-					<input type="text" class="input-sto" placeholder="Номер телефону">
-					<input type="text" class="input-sto" placeholder="Ваш Емейл">
-					
-					<input class="form-sto-btn hvr-wobble-horizontal" type="button" name="Відправити" value="Відправити">
+				<!-- tab_2============================================ -->
+				<div id="tab_2" class="tab-auto-content-prof">
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				
-			</form>
+				<!-- tab_3============================================ -->
+				<div id="tab_3" class="tab-auto-content-prof">
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- tab_4============================================ -->
+				<div id="tab_4" class="tab-auto-content-prof">
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- tab_5============================================ -->
+				<div id="tab_5" class="tab-auto-content-prof">
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first-auto-mini-prof">
+						<img src="static/img/sto/load.png" data-src="static/img/sto/group-4.png" alt="">
+						<div class="first-wrap">
+							<div class="first__title">
+								MAN 23u 2k
+							</div>
+							<div class="first__type">
+								Тип
+							</div>
+							<div class="first__sub">
+								Рефрижиратор
+							</div>
+							<a href="#block_id_auto">
+								<span class="first__btn">
+									Обрати
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block_id_auto" class="title-wrap title-wrap_swipe">
+				<div class="green-line">
+
+				</div>
+				<h2 class="main__title">
+					Калькулятор вартості перевезення
+				</h2>
+			</div>
+			<p class="auto__title">
+				Наша висококваліфікована команда виконує діагностику, ремонт і технічне обслуговування вашого автомобіля . 
+			</p>
+			<div class="block-calculator">
+				<div class="left-block-wrap">
+					<div class="quest-block">
+						<div class="quest-num">
+							1
+						</div>
+						<div class="quest-text">
+							Оберіть Пречіп 
+						</div>
+					</div>
+					<div class="left-block">
+						<div id="bl-1" class="left-prof">
+							<div class="okey">
+								<img src="static/img/index/png-гал.png" alt="">
+							</div>
+							<img src="static/img/Spinner.gif" alt="" class="calc-img">
+							<div class="calk-text">
+								Рефрижиратор
+							</div>
+						</div>
+						<div id="bl-2" class="left-prof">
+							<div class="okey">
+								<img src="static/img/index/png-гал.png" alt="">
+							</div>
+							<img src="static/img/Spinner.gif" alt="" class="calc-img">
+							<div class="calk-text">
+								Самоскид
+							</div>
+						</div>
+						<div id="bl-3" class="left-prof">
+							<div class="okey">
+								<img src="static/img/index/png-гал.png" alt="">
+							</div>
+							<img src="static/img/Spinner.gif" alt="" class="calc-img">
+							<div class="calk-text">
+								Рідинні бочки
+							</div>
+						</div>
+						<div id="bl-4" class="left-prof">
+							<div class="okey">
+								<img src="static/img/index/png-гал.png" alt="">
+							</div>
+							<img src="static/img/Spinner.gif" alt="" class="calc-img">
+							<div class="calk-text">
+								Цистерни сипучі
+							</div>
+						</div>
+						<div id="bl-5" class="left-prof">
+							<div class="okey">
+								<img src="static/img/index/png-гал.png" alt="">
+							</div>
+							<img src="static/img/Spinner.gif" alt="" class="calc-img">
+							<div class="calk-text">
+								Тент
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-block-wrap">
+					<div class="quest-block">
+						<div class="quest-num">
+							2
+						</div>
+						<div class="quest-text">
+							Заповніть форму  
+						</div>
+					</div>
+					<div class="right-block">
+						<div class="form">
+							<div class="input-wrap-fix">
+									<div class="fix-input-wrap">
+										<label for="input-test-1">Точка погрузки</label>
+									<input type="text" name="input-test-1" class="input-main" placeholder="Місто, вулиця, номер буд.">
+									</div>
+									<div class="btn-abs-fixed">
+										<img src="static/img/index/map.svg" alt="">
+										<div class="new-fix-line"></div>
+									</div>
+							</div>
+							<div class="btn-add">+ Додати проміжний пункт?</div>
+							<div class="input-new-wrap">
+									
+									<div class="input-wrap-add">
+											<input type="text" name="input-test-2" class="input-add" placeholder="Місто, вулиця, номер буд.">
+											<div class="btn-abs">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22">
+													<g fill="none" fill-rule="evenodd" stroke="#B90404" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+														<path d="M1 5h18M17 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 0V3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 10v6M12 10v6"/>
+													</g>
+													
+												</svg>
+												<div class="new-fix-line"></div>
+												
+											</div>
+									</div>
+							</div>
+							<div class="input-wrap-fix input-wrap-fix-2">
+									<div class="fix-input-wrap">
+										<label for="input-test-2">Точка вигрузки</label>
+									<input type="text" name="input-test-2" class="input-main" placeholder="Місто, вулиця, номер буд.">
+									</div>
+									<div class="btn-abs-fixed">
+										<img src="static/img/index/map.svg" alt="">
+										<div class="new-fix-line"></div>
+									</div>
+							</div>
+							<div class="btn-add-2">+ Додати точку вигрузки!?</div>
+							<div class="input-new-wrap-2">
+	
+							</div>
+							<div class="input-bottom">
+									<div class="input-wrap">
+											<label for="input-test-3">Кілометраж</label>
+											<input class="bottom-inp bottom-inp-1" type="number" id="input-test-3" name="input-test-3" class="input-main" placeholder="100">
+											
+									</div>
+									<div class="input-wrap">
+											<label for="input-test-4">Тонаж</label>
+											<input class="bottom-inp" type="number" id="input-test-4" name="input-test-4" class="input-main" placeholder="10">
+											
+									</div>
+							</div>
+							
+								<div class="btn-result link-fanc" data-src="#modal-form">
+									Розрахувати
+								</div>
+						
+			
+			
+			
+						</div>
+					</div>
+				</div>
+			</div>   
+			
 		</div>
-        </div>
-        <!-- /.container -->
+		<!-- /.container -->
+		
     </header>
     <!-- /.header -->
 
@@ -292,9 +1327,11 @@
 
 
 
-    <script type="text/javascript" src="static/js/jQuery.js"></script>
-	<script type="text/javascript" src="static/js/lazy.js"></script>
-  	<script src="static/js/wow.min.js"></script>
-  	<script type="text/javascript" src="static/js/main.js"></script>
+    <script type="text/javascript" src="static/js/jQuery.js" defer></script>
+	<script type="text/javascript" src="static/js/lazy.js" defer></script>
+	  <script src="static/js/wow.min.js" defer></script>
+	  <script src="static/js/jquery.fancybox.min.js" defer></script>
+	  <script src="static/js/jquery.validate.min.js" defer></script>
+  	<script type="text/javascript" src="static/js/main.js" defer></script>
 </body>
 </html>
