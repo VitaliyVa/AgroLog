@@ -1,5 +1,12 @@
 $( document ).ready(function() {
     
+    $.extend($.lazyLoadXT, {
+        edgeY:  200,
+        srcAttr: 'data-src'
+      });
+      
+
+
 // link_active
 
     if (window.location.href == 'file:///C:/Users/odmin/Desktop/agroLog/About-page.html') {

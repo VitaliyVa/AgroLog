@@ -231,7 +231,8 @@
 .auto-block {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 400px; }
 
 .right-auto {
   display: -webkit-box;
