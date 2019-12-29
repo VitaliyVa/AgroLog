@@ -18,6 +18,9 @@
 @import 'header__auto__park';
 // vakancies
 @import 'vakancies';
+// kabinet
+@import 'kabinet';
+
 
 
 
@@ -922,6 +925,7 @@ img {
         align-items: flex-start;
     }
 }
+
 @media (max-width: 573px) {
    .nav-bar {
     background:#fff url('../img/index/decor-bleat.png') no-repeat left -64px top;
